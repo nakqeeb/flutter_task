@@ -41,18 +41,24 @@ class SpaTile extends StatelessWidget {
               ),
             ),
           ]),
-          ElevatedButton(
-            onPressed: () {},
-            style: ButtonStyle(
-              elevation: MaterialStateProperty.all(0),
-              backgroundColor: MaterialStateProperty.all(Colors.cyan),
-              shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(25),
+          Padding(
+            padding: const EdgeInsets.only(top: 8),
+            child: SizedBox(
+              height: 30,
+              child: ElevatedButton(
+                onPressed: () {},
+                style: ButtonStyle(
+                  elevation: MaterialStateProperty.all(0),
+                  backgroundColor: MaterialStateProperty.all(Colors.cyan),
+                  shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                    RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(25),
+                    ),
+                  ),
                 ),
+                child: const Text('Back'),
               ),
             ),
-            child: const Text('Back'),
           ),
         ],
       ),
